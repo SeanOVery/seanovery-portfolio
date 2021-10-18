@@ -184,42 +184,42 @@ main {
 
 
 #project1 {
-    background-image: url(../images/css-cheatsheet.png);
+    background-image: url(../images/api-search.png);
     background-size: auto;
     background-repeat: no-repeat;
     color: var(--main-text-color);
 }
 
 #project2 {
-    background-image: url(../images/rock.jpg);
+    background-image: url(../images/weather-app.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--main-text-color);
 }
 
 #project3 {
-    background-image: url(../images/password.jpg);
+    background-image: url(../images/day-scheduler.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--main-text-color);
 }
 
 #project4 {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/css-cheatsheet.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--main-text-color);
 }
 
 #project5 {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/main-quiz.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--main-text-color);
 }
 
 #project6 {
-    background-image: url(../images/placeholder.jpg);
+    background-image: url(../images/passgenscreen.png);
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--main-text-color);
