@@ -1,0 +1,322 @@
+:root {
+    --bg-color: rgba(45, 45, 45, 1);
+    --bg-color-2:  rgba(75, 142, 196, 0.7);
+    --bg-color-3: rgba(30, 30, 30, 1);
+    --main-text-color: rgba(252, 252, 252, 0.692);
+    --secondary-text-color: rgb(74, 173, 212);
+    --gradient-bg: linear-gradient( var(--bg-color) 0%, var(--bg-color-3) 100%);
+    --gradient-bg-reverse: linear-gradient( var(--bg-color-3) 0%, var(--bg-color) 100%);
+}
+/* Variables for various colors and gradients used throughout */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+/* Setting font */
+
+
+header {
+    text-align: right;
+    margin: 0;
+    background-color: var(--bg-color);
+    padding: 0px 0;
+    color: var(--main-text-color);
+    height: 100px;
+}
+
+header h1 {
+    margin-right: 30px;
+    padding-top: 40px;
+    float:right
+}
+
+#avatar {
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* alignment of header elements */
+
+
+nav {
+    display: flex;
+    margin: 0;
+    background-image: var(--gradient-bg);
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+nav a {
+    background-color: var(--bg-color-3);
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px 15px;
+    margin: 0px 4px 5px 4px;
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: var(--main-text-color)
+}
+/* Navbar alignment; Flexbox setup for responsiveness */
+
+
+.hero-image {
+    background-image: url(../images/hero.png);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    border-bottom: 4px dotted var(--main-text-color);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h1{
+    position: relative;
+    flex: 1 1;
+    font-size: 40px;
+    color: var(--main-text-color);
+    margin: 100px 10px;
+    text-align: center;
+    
+}
+/*Setup for hero image and text. Used flexbox but could prob simplify */
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 25%;
+    border-right: 4px dotted var(--main-text-color);
+    padding: 0 15px;
+    background-color: var(--bg-color-3);
+    color: var(--main-text-color);
+}
+
+.left p, .left h2 {
+    text-align: center;
+}
+
+.left p {
+    font-size: larger;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    background-color: var(--bg-color-3);
+    padding: 0 15px;
+}
+/* Flexbox depth 0 and setup of flexbox depth 1, sets up 2 items left and right(eventually up and down for smaller screens) */
+
+
+.maincard {
+    width: 80%;
+    height: 400px;
+    margin: 15px 20px;
+    background-color: var(--bg-color);
+}
+
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: var(--main-text-color);
+}
+/* Flexbox depth 1 and setup of depth 2, sets up big box on top and smaller project boxes on bottom */
+
+
+.card {
+    width: 400px;
+    height: 200px;
+    margin: 10px 15px;
+    background-color: var(--bg-color);
+}
+
+.card, .maincard {
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 20px;
+    margin: 2% 1% 1% 1%;
+    border-color: var(--main-text-color);
+}
+
+.cards a, .projects a {
+    text-decoration: none;
+}
+
+.cards a:visited, .projects a:visited {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.card h3, .maincard h3 {
+    color: var(--secondary-text-color);
+    position: relative;
+    text-align: center;
+    border-style: solid;
+    border-color: var(--main-text-color);
+    width: 80%;
+    border-radius: 0 15px 15px 0;
+    margin: 0 20% 0 0%;
+    font-size: xx-large;
+    transition: all 1s ease-in-out;
+    background-color: var(--bg-color-3);
+}
+/* Flexbox depth 2 details and a few general styles applied to both the large card in depth 1 and the small cards in depth 2 */
+
+
+#project1 {
+    background-image: url(../images/css-cheatsheet.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+
+#project2 {
+    background-image: url(../images/rock.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+
+#project3 {
+    background-image: url(../images/password.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+
+#project4 {
+    background-image: url(../images/placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+
+#project5 {
+    background-image: url(../images/placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+
+#project6 {
+    background-image: url(../images/placeholder.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+}
+/* Backgrounds for project boxes */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-image: var(--gradient-bg-reverse);
+    margin: 0;
+    padding: 30px 0;
+    border-top: 4px dotted var(--main-text-color);
+}
+
+footer p, footer a {
+    width: 25%;
+    margin: 0 10px;
+    color: var(--main-text-color);
+    border-style: solid;
+    border-width: 4px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: var(--bg-color-3);
+    font-size: xx-large;
+    text-align: center;
+}
+/* Setting up footer as flexbox and styling  */
+
+
+@media screen and (max-width: 1080px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .left {
+        width: 100%;
+        padding: 15px 0;
+        border-right: none;
+        border-bottom: 4px dotted var(--main-text-color);
+    }
+
+    .left p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .projects {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p, footer a {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+
+}
+/* Adjusting to fit smaller screens eg tablet, horizontal monitor. Mainly converting some row flexboxes to column */
+
+
+@media screen and (max-width: 768px) {
+    
+    .maincard{
+        height: 200px;
+    }
+    
+    .card {
+        width: 150px;
+        height: 75px;
+    }
+
+    .card h3, .maincard h3 {
+        font-size: medium;
+    }
+
+    nav {
+        padding-top: 15px;
+    }
+    
+    .hero-text h1 {
+        font-size: 25px;
+    }
+}
+/* Adjusting to fit phone sized devices */
